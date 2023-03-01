@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="container">
+        <!-- header top -->
+        <nav class="navbar navbar-expand-lg navbar-dark pt-4 pb-0">
+          <div class="col-3 d-none d-md-block">
+            <a href="/"> <img src="img/logo.png" title="Спецмашины" alt="logo" /></a>
+            <!-- <a class="d-flex flex-column" href="/">
+              <img src="img/logo1.png" title="Спецмашины" alt="logo" />
+              <img src="img/logo2.png" title="Спецмашины" alt="logo" />
+            </a> -->
+          </div>
+          <div class="col-2 d-md-none">
+            <a href="/"> <img src="img/logo1.png" title="Спецмашины" alt="logo" /></a>
+            <!-- <a class="d-flex flex-column" href="/">
+              <img src="img/logo1.png" title="Спецмашины" alt="logo" />
+              <img src="img/logo2.png" title="Спецмашины" alt="logo" />
+            </a> -->
+          </div>
+
+          <div class="col-8 col-lg-6 px-lg-3">
+            <div class="input-group">
+              <input type="text" class="form-control border-end-0 border" placeholder="Поиск..." aria-label="Поиск" aria-describedby="button-addon2" />
+              <button class="btn btn-outline-secondary border-start-0 border" type="button" id="button-addon2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <button class="col-lg-3 d-none d-lg-block btn btn-secondary catalog-btn">заказать звонок</button>
+
+          <button class="navbar-toggler burger-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <!-- header bottom -->
+        <nav class="navbar navbar-expand-lg py-4">
+          <div class="navbar-collapse collapse nav-bottom" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-bottom-ul">
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="#">Главная</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="#">Каталог</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="#">личный кабинет</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="#">контакты</a>
+              </li>
+            </ul>
+
+            <ul class="navbar-nav nav-bottom-user">
+              <li class="nav-item ps-lg-3">
+                <a class="nav-link pe-0" href="#">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                  </svg>
+                  <span class="d-lg-none">Профиль</span>
+                </a>
+              </li>
+              <li class="nav-item ps-lg-3">
+                <a class="nav-link pe-0" href="#">
+                  <svg stroke="currentColor" fill="none" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <circle cx="6" cy="19" r="2"></circle>
+                    <circle cx="17" cy="19" r="2"></circle>
+                    <path d="M17 17h-11v-14h-2"></path>
+                    <path d="M6 5l14 1l-1 7h-13"></path>
+                  </svg>
+                  <span class="d-lg-none">Корзина</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="mt-lg-4 section1">
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 18.png" alt="foto1">
+                  <span>Аккумуляторы, электрооборудование</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 19.png" alt="foto1">
+                  <span>Аксессуары</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 20.png" alt="foto1">
+                  <span>Гидравлика</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 21.png" alt="foto1">
+                  <span>Двигатели</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 22.png" alt="foto1">
+                  <span>Запчасти для иномарок (легковые и грузовые)</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 23.png" alt="foto1">
+                  <span>Инструменты</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 24.png" alt="foto1">
+                  <span>Масла, смазки, автохимия, технические жидкости</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 25.png" alt="foto1">
+                  <span>Запчасти на отечественные машины и трактора</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 26.png" alt="foto1">
+                  <span>Пневматика</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 27.png" alt="foto1">
+                  <span>Подшипники, цепи, ленты лат</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 28.png" alt="foto1">
+                  <span>Расходники</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 29.png" alt="foto1">
+                  <span>РВД (рукава высокого давления)</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 30.png" alt="foto1">
+                  <span>РТИ, уплотнители</span>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-3 mb-4">
+              <a href="#">
+                <div class="image">
+                  <img src="img/Group 31.png" alt="foto1">
+                  <span>Трубки и рукава</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="/"> <img src="img/logo_footer.png" title="Ваш магазин" alt="logo"></a>
+          </div>
+
+          <div class="col-md-5">
+            <ul class="list-unstyled">
+              <li><a href="#">О компании</a></li>
+              <li><a href="#">сотрудничество</a></li>
+              <li><a href="#">как купить</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </div>
+
+          <div class="col-md-4">
+            <h5>Телефон:</h5>
+            <ul class="list-unstyled">
+              <li><a href="tel:+78004443216">+7 (800) 444-32-16</a></li>
+              <li><a href="tel:+79281729498">+7 (928) 172-94-98 (Красинская, 118)</a></li>
+              <li><a href="tel:+79381421098">+7 (938) 142-10-98 (Маяковского, 77)</a></li>
+            </ul>
+            <h5>E-mail:</h5>
+            <ul class="list-unstyled">
+              <li><a class="text-lowercase" href="mailto:ecodom107@yandex.ru">ecodom107@yandex.ru</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+
+
+
+
+
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
