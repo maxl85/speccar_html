@@ -1,3 +1,11 @@
+:root {
+  --main-color: #E00000;
+  --main-color-hover: #ae0000;
+  --gray: #C5C5C5;
+  --gray-lite: #D1D1D1;
+  
+}
+
 html,
 body {
   /* font-family: 'Roboto', sans-serif; */
@@ -37,8 +45,8 @@ a {
 a:hover,
 a:focus {
   /* text-decoration: underline; */
-  /* text-decoration-color: #38B44A; */
-  color: #38B44A;
+  /* text-decoration-color: var(--main-color); */
+  color: var(--main-color-hover);
 }
 
 
@@ -51,7 +59,11 @@ a:focus {
 }
 
 #button-addon2:hover {
-  background: #38B44A;
+  background: var(--main-color);
+}
+
+#button-addon2:active {
+  background: var(--main-color-hover);
 }
 
 .header-tel {
@@ -82,25 +94,25 @@ a:focus {
 }
 
 .catalog-btn {
-  background: #38B44A;
+  background: var(--main-color);
   text-transform: uppercase;
   color: #fff;
   height: 40px;
-  /* width: 131.38px; */
+  width: 254px;
   border: none;
 
 }
 
 .catalog-btn:hover {
-  background: #30893d;
+  background: var(--main-color-hover);
 }
 
 .catalog-btn:active {
-  background-color: #30893d !important;
+  background-color: var(--main-color-hover) !important;
 }
 
 .burger-btn {
-  background: #38B44A;
+  background: var(--main-color);
 }
 
 .nav-bottom-ul {
@@ -114,7 +126,7 @@ a:focus {
 }
 
 .nav-bottom a:hover {
-  color: #38B44A;
+  color: var(--main-color);
 }
 
 .nav-bottom ul:last-of-type {
@@ -136,7 +148,7 @@ a:focus {
 }
 
 .cart-badge {
-  background: #38B44A;
+  background: var(--main-color);
   position: absolute;
   top: 0px;
   left: 0px;
@@ -155,7 +167,7 @@ a:focus {
 }
 
 .cart-btn-go {
-  background: #38B44A;
+  background: var(--main-color);
   text-transform: none;
   color: #fff !important;
   /* height: 40px; */
@@ -167,6 +179,34 @@ a:focus {
   text-decoration: none;
 }
 
+/* #navbarNavDropdown {
+  border-bottom: 1px solid #D9D9D9;
+} */
+
+#navbarNavDropdown a {
+  border-bottom: 3px solid #fff; 
+}
+#navbarNavDropdown a:hover {
+  border-bottom: 3px solid var(--main-color); 
+}
+
+/* ------------------- section0 ------------------- */
+.section0 {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+
+.sec0-p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+}
+
+
+
+
 /* ------------------- section1 ------------------- */
 
 /* .image:hover {
@@ -176,6 +216,11 @@ a:focus {
 
 .image {
   position: relative;
+  border-bottom :5px solid #fff;
+}
+
+.image:hover {
+  border-bottom :5px solid var(--main-color);
 }
 
 .section1 span {
@@ -183,18 +228,47 @@ a:focus {
   font-weight: 500;
 }
 
+/* ------------------- section2 ------------------- */
+.sec2-content {
+  padding: 39px;;
+  background-color: var(--gray-lite);
+}
+
+.sec2-content input {
+  margin-bottom: 10px;
+}
+
+.sec2-content button {
+  float: right;
+}
+
+.sec2-p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
 
 /* ------------------- footer ------------------- */
 
 
-footer {
-  margin-top: 30px;
-  padding-top: 30px;
-  background-color: #38B44A;
+.footer-content {
+  margin-top: 21px;
+  padding: 39px;
+  background-color: var(--gray);
+  border-top:3px solid var(--main-color)
+}
+
+.footer-link {
+  /* line-height: 35px; */
+  margin-left: 50px;
+  margin-bottom: 36px;
 }
 
 footer a {
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-size: 13px;
   text-transform: uppercase;
@@ -202,18 +276,18 @@ footer a {
 
 footer a:hover,
 footer a:focus {
-  color: #000;
+  color: var(--main-color-hover);
 }
 
 footer li {
-  color: #fff;
+  color: #000;
   font-weight: 600;
   font-size: 13px;
-
+  line-height: 16px;
 }
 
 footer h5 {
-  color: #fff;
+  color: #000;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
@@ -223,7 +297,7 @@ footer h5 {
 
 
 /* .cart-green-btn {
-    background-color: #38B44A;
+    background-color: var(--main-color);
     border: none;
 }
 
@@ -238,7 +312,7 @@ footer h5 {
 } */
 
 .btn-primary {
-  background-color: #38B44A;
+  background-color: var(--main-color);
   border: none;
 }
 
@@ -318,12 +392,12 @@ legend {
 /* ------------------- btn-toggle ------------------- */
 
 .list-group-item+.list-group-item.active {
-  background-color: #38B44A;
+  background-color: var(--main-color);
   border: none;
 }
 
 .list-group-item.active {
-  background-color: #38B44A;
+  background-color: var(--main-color);
   border: none;
 }
 
@@ -331,7 +405,7 @@ legend {
 .dropdown-item:active {
   color: white;
   text-decoration: none;
-  background-color: #38B44A;
+  background-color: var(--main-color);
 }
 
 /* .dropdown-toggle { outline: 0; } */
@@ -384,15 +458,34 @@ legend {
 
 /* ------------------- media ------------------- */
 @media (max-width: 576px) {
+  .sec0-p {
+    font-size: 16px;
+    line-height: 20px;
+  }
   .section1 span {
     top: 60%;
     left: 5%;
     font-size: calc(12px + (16 + 16 * 0.7) * ((100vw - 320px) / 1280));
     line-height: 120%;
   }
+  .sec2-p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .footer-link {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-width: 576px) {
+  .sec0-p {
+    font-size: 20px;
+    line-height: 40px;
+  }
+  
   .section1 span {
     top: 126px;
     left: 15px;
@@ -400,18 +493,45 @@ legend {
     line-height: 20px;
 
   }
+  .sec2-p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .footer-link {
+    margin-top: 30px;
+    margin-left: 0px;
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-width: 768px) {
+  .sec0-p {
+    font-size: 25px;
+    line-height: 45px;
+  }
+  
   .section1 span {
     top: 80px;
     left: 5px;
     font-size: 13px;
     line-height: 14px;
   }
+  
+  .sec2-p {
+    font-size: 26px;
+    line-height: 30px;
+  }
+  
+  .footer-link {
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-bottom: 36px;
+  }
 }
 
 @media (min-width: 992px) {
+  
   .section1 span {
     top: 108px;
     left: 7px;
@@ -423,6 +543,11 @@ legend {
 @media (min-width: 1200px) {
   .container {
     width: 1140px;
+  }
+  
+  .sec0-p {
+    font-size: 35px;
+    line-height: 45px;
   }
 
   .section1 span {
